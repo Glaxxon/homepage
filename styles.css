@@ -1,0 +1,140 @@
+body {
+    background-color: #3A3A3A;
+    text-align: center;
+}
+
+h1 {
+    color: #6C9CDB;
+    font-family: Lucida Bright;
+}
+
+footer {
+    color: white;
+}
+
+.intro {
+    font-size: 16pt;
+    color: white;
+}
+
+.random-movie-output {
+  font-size: 18pt;
+  color: #62CB93;
+}
+
+.custom-carousel {
+    max-width: 1100px;
+    margin: 0 auto; /* Centers the carousel horizontally */
+  }
+
+.custom-carousel .carousel-inner {
+    height: 555px; /* Sets the height for the carousel */
+  }
+
+.custom-carousel .carousel-item img {
+    max-height: 555px; /* Sets the height for carousel images */
+  }
+
+.custom-card {
+    width: 336px;
+    height: 620px;
+  }
+
+.imdb-button {
+  display: inline-block;
+  padding: 8px 16px; /* Adjusts padding to control button size */
+  background-color: #FFE02E; /* Background colour for the button */
+  color: black; /* Button text colour */
+  text-decoration: none; /* Removes underline for the link */
+  border: none; /* Removes the button border */
+  border-radius: 5px; /* Makes the button corners round */
+  cursor: pointer; /* Shows a pointer cursor on hover */
+  font-weight: bold;
+}
+
+.justwatch-button {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #060d17;
+  color: #f9d442;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.random-movie-button {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #55F333;
+  color: black;
+  font-size: 16pt;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#book-table {
+  margin: 0 auto;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.drop-button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  overflow: auto;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .drop-button {
+  background-color: #3e8e41;
+}
+
+#iframe-container {
+  display: none; /* Initially hides the iframe */
+  margin: 0 auto;
+}
+
+/* td font styling for individual book html pages */
+.iframe-td {
+  font-size: 12pt;
+  text-align: left;
+  vertical-align: top;
+  color: white;
+  padding: 16px;
+}

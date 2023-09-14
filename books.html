@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>I am Glaxxon - Books</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">I am Glaxxon</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" href="index.html">Home</a>
+                  <a class="nav-link" href="gaming.html">Gaming</a>
+                  <a class="nav-link" href="movies.html">Movies</a>
+                  <a class="nav-link active" aria-current="page" href="#">Books</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        <br>
+        <h1>Books</h1><br>
+        <div class="intro">
+          I love grabbing a book and escaping to another world.
+          <br><br>
+          I enjoy reading a wide range of genres. Select a book from the genres below for more information.
+          <br><br>
+        </div>
+
+        <main>
+          <!--Drop down menu, one for each genre of book, listing books under each one-->
+          <table id="book-table">
+            <tr>
+              <td>
+                <div class="dropdown" style="padding: 10px">
+                  <button class="drop-button">Fantasy</button>
+                  <div class="dropdown-content" style="left:0;">
+                    <a href="agameofthrones.html" class="load-iframe">A Game of Thrones</a>
+                    <a href="harrypotter.html" class="load-iframe">Harry Potter</a>
+                    <a href="lotr.html" class="load-iframe">The Lord of the Rings</a>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="dropdown" style="padding: 10px">
+                  <button class="drop-button">Science Fiction</button>
+                  <div class="dropdown-content" style="left:0;">
+                    <a href="1984.html" class="load-iframe">1984</a>
+                    <a href="dune.html" class="load-iframe">Dune</a>
+                    <a href="mazerunner.html" class="load-iframe">The Maze Runner</a>
+                    <a href="hungergames.html" class="load-iframe">The Hunger Games</a>
+                    <a href="theroad.html" class="load-iframe">The Road</a>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="dropdown" style="padding: 10px">
+                  <button class="drop-button">Thriller</button>
+                  <div class="dropdown-content" style="right:0;">
+                    <a href="killingfloor.html" class="load-iframe">Killing Floor</a>
+                    <a href="misery.html" class="load-iframe">Misery</a>
+                    <a href="persuader.html" class="load-iframe">Persuader</a>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+          <br><br>
+
+          <!--An iframe that displays the book's html file on click using javascript-->
+          <div id="iframe-container">
+            <iframe id="book-iframe" width="800" height="600" src=""></iframe>
+          </div>
+
+          <br><br>
+        </main>
+
+        <footer>
+          <div>
+            <br><br>
+            © 2023 by Glaxxon. Made for CS50x.
+          </div>
+        </footer>
+      <script>
+        const loadIframeButtons = document.querySelectorAll(".load-iframe");
+        const iframeContainer = document.getElementById("iframe-container");
+        const bookIframe = document.getElementById("book-iframe");
+
+        loadIframeButtons.forEach(button => {
+          button.addEventListener("click", function (event) {
+            event.preventDefault();
+
+            const url = event.target.getAttribute("href");
+
+            bookIframe.src = url;
+
+            iframeContainer.style.display = "block";
+          });
+        });
+      </script>
+    </body>
+</html>

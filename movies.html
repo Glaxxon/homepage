@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>I am Glaxxon - Movies</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">I am Glaxxon</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" href="index.html">Home</a>
+                  <a class="nav-link" href="gaming.html">Gaming</a>
+                  <a class="nav-link active" aria-current="page" href="#">Movies</a>
+                  <a class="nav-link" href="books.html">Books</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        <br>
+
+        <h1>Movies</h1><br>
+        <div class="intro">
+            Here are some of my favourite Movies.
+            <br><br>
+            You can view more details of the movie at IMDb or see where it's streaming by clicking the appropriate buttons.
+            <br><br>
+            If you need something new to watch, try my recommend function below to randomly choose your next great watch.
+            <br><br>
+        </div>
+
+        <!--Button for selecting random movie-->
+        <div>
+          <button class="random-movie-button" id="random-click">Click here to pick a random movie</button>
+          <br><br>
+          <div class="random-movie-output" id="random-movie"></div>
+          <br><br><br>
+        </div>
+
+        <!--Below are the cards that display each movie in a separate card-->
+        <main class="container mx-auto">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card custom-card">
+                <img src="images/afewgoodmen.png" class="card-img-top" alt="A Few Good Men">
+                <div class="card-body">
+                  <h5 class="card-title">A Few Good Men (1992)</h5>
+                  <br>
+                  <!--Links to IMDb and JustWatch page, stylized as buttons using classes-->
+                  <a href="https://www.imdb.com/title/tt0104257/" target="_blank" class="imdb-button">IMDb</a>
+                  <a href="https://www.justwatch.com/au/movie/a-few-good-men" target="_blank" class="justwatch-button">Find Streaming</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card custom-card">
+                <img src="images/aliens.png" class="card-img-top" alt="Aliens">
+                <div class="card-body">
+                  <h5 class="card-title">Aliens (1986)</h5>
+                  <br>
+                  <a href="https://www.imdb.com/title/tt0090605/" target="_blank" class="imdb-button">IMDb</a>
+                  <a href="https://www.justwatch.com/au/movie/aliens" target="_blank" class="justwatch-button">Find Streaming</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card custom-card">
+                <img src="images/anamericanwerewolf.png" class="card-img-top" alt="An American Werewolf in London">
+                <div class="card-body">
+                  <h5 class="card-title">An American Werewolf in London (1981)</h5>
+                  <a href="https://www.imdb.com/title/tt0082010/" target="_blank" class="imdb-button">IMDb</a>
+                  <a href="https://www.justwatch.com/au/movie/an-american-werewolf-in-london" target="_blank" class="justwatch-button">Find Streaming</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card custom-card">
+                <img src="images/bladerunner2049.png" class="card-img-top" alt="Blade Runner 2049">
+                <div class="card-body">
+                  <h5 class="card-title">Blade Runner 2049 (2017)</h5>
+                  <br>
+                  <a href="https://www.imdb.com/title/tt1856101/" target="_blank" class="imdb-button">IMDb</a>
+                  <a href="https://www.justwatch.com/au/movie/blade-runner-2049" target="_blank" class="justwatch-button">Find Streaming</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card custom-card">
+                <img src="images/diehard.png" class="card-img-top" alt="Die Hard">
+                <div class="card-body">
+                  <h5 class="card-title">Die Hard (1988)</h5>
+                  <br>
+                  <a href="https://www.imdb.com/title/tt0095016/" target="_blank" class="imdb-button">IMDb</a>
+                  <a href="https://www.justwatch.com/au/movie/die-hard-1" target="_blank" class="justwatch-button">Find Streaming</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card custom-card">
+                <img src="images/edgeoftomorrow.png" class="card-img-top" alt="Edge of Tomorrow">
+                <div class="card-body">
+                  <h5 class="card-title">Edge of Tomorrow (2014)</h5>
+                  <br>
+                  <a href="https://www.imdb.com/title/tt1631867/" target="_blank" class="imdb-button">IMDb</a>
+                  <a href="https://www.justwatch.com/au/movie/un-jour-sans-lendemain" target="_blank" class="justwatch-button">Find Streaming</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card custom-card">
+                <img src="images/harrypotter3.png" class="card-img-top" alt="Harry Potter and the Prisoner of Azkaban">
+                <div class="card-body">
+                  <h5 class="card-title">Harry Potter and the Prisoner of Azkaban (2004)</h5>
+                  <a href="https://www.imdb.com/title/tt0304141/" target="_blank" class="imdb-button">IMDb</a>
+                  <a href="https://www.justwatch.com/au/movie/hp3" target="_blank" class="justwatch-button">Find Streaming</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card custom-card">
+                <img src="images/ironman.png" class="card-img-top" alt="Iron Man">
+                <div class="card-body">
+                  <h5 class="card-title">Iron Man (2008)</h5>
+                  <br>
+                  <a href="https://www.imdb.com/title/tt0371746/" target="_blank" class="imdb-button">IMDb</a>
+                  <a href="https://www.justwatch.com/au/movie/iron-man" target="_blank" class="justwatch-button">Find Streaming</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card custom-card">
+                <img src="images/johnwick.png" class="card-img-top" alt="John Wick">
+                <div class="card-body">
+                  <h5 class="card-title">John Wick (2014)</h5>
+                  <br>
+                  <a href="https://www.imdb.com/title/tt2911666/" target="_blank" class="imdb-button">IMDb</a>
+                  <a href="https://www.justwatch.com/au/movie/john-wick" target="_blank" class="justwatch-button">Find Streaming</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card custom-card">
+                <img src="images/missionimpossible4.png" class="card-img-top" alt="Mission: Impossible - Ghost Protocol">
+                <div class="card-body">
+                  <h5 class="card-title">Mission: Impossible - Ghost Protocol (2011)</h5>
+                  <a href="https://www.imdb.com/title/tt1229238/" target="_blank" class="imdb-button">IMDb</a>
+                  <a href="https://www.justwatch.com/au/movie/mission-impossible-ghost-protocol" target="_blank" class="justwatch-button">Find Streaming</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card custom-card">
+                <img src="images/rememberthetitans.png" class="card-img-top" alt="Remember the Titans">
+                <div class="card-body">
+                  <h5 class="card-title">Remember the Titans (2000)</h5>
+                  <br>
+                  <a href="https://www.imdb.com/title/tt0210945/" target="_blank" class="imdb-button">IMDb</a>
+                  <a href="https://www.justwatch.com/au/movie/remember-the-titans" target="_blank" class="justwatch-button">Find Streaming</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card custom-card">
+                <img src="images/savingprivateryan.png" class="card-img-top" alt="Saving Private Ryan">
+                <div class="card-body">
+                  <h5 class="card-title">Saving Private Ryan (1998)</h5>
+                  <br>
+                  <a href="https://www.imdb.com/title/tt0120815/" target="_blank" class="imdb-button">IMDb</a>
+                  <a href="https://www.justwatch.com/au/movie/saving-private-ryan" target="_blank" class="justwatch-button">Find Streaming</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card custom-card">
+                <img src="images/terminator2.png" class="card-img-top" alt="Terminator 2: Judgement Day">
+                <div class="card-body">
+                  <h5 class="card-title">Terminator 2: Judgement Day (1991)</h5>
+                  <a href="https://www.imdb.com/title/tt0103064/" target="_blank" class="imdb-button">IMDb</a>
+                  <a href="https://www.justwatch.com/au/movie/terminator-2-judgment-day" target="_blank" class="justwatch-button">Find Streaming</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card custom-card">
+                <img src="images/thebatman.png" class="card-img-top" alt="The Batman">
+                <div class="card-body">
+                  <h5 class="card-title">The Batman (2022)</h5>
+                  <br>
+                  <a href="https://www.imdb.com/title/tt1877830/" target="_blank" class="imdb-button">IMDb</a>
+                  <a href="https://www.justwatch.com/au/movie/the-batman" target="_blank" class="justwatch-button">Find Streaming</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card custom-card">
+                <img src="images/thedarkknight.png" class="card-img-top" alt="The Dark Knight">
+                <div class="card-body">
+                  <h5 class="card-title">The Dark Knight (2008)</h5>
+                  <br>
+                  <a href="https://www.imdb.com/title/tt0468569/" target="_blank" class="imdb-button">IMDb</a>
+                  <a href="https://www.justwatch.com/au/movie/batman-the-dark-knight" target="_blank" class="justwatch-button">Find Streaming</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card custom-card">
+                <img src="images/theequalizer.png" class="card-img-top" alt="The Equalizer">
+                <div class="card-body">
+                  <h5 class="card-title">The Equalizer (2014)</h5>
+                  <br>
+                  <a href="https://www.imdb.com/title/tt0455944/" target="_blank" class="imdb-button">IMDb</a>
+                  <a href="https://www.justwatch.com/au/movie/the-equalizer" target="_blank" class="justwatch-button">Find Streaming</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card custom-card">
+                <img src="images/thelastsamurai.png" class="card-img-top" alt="The Last Samurai">
+                <div class="card-body">
+                  <h5 class="card-title">The Last Samurai (2003)</h5>
+                  <br>
+                  <a href="https://www.imdb.com/title/tt0325710/" target="_blank" class="imdb-button">IMDb</a>
+                  <a href="https://www.justwatch.com/au/movie/the-last-samurai" target="_blank" class="justwatch-button">Find Streaming</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card custom-card">
+                <img src="images/lotr3.png" class="card-img-top" alt="The Lord of the Rings: The Return of the King">
+                <div class="card-body">
+                  <h5 class="card-title">The Lord of the Rings: The Return of the King (2003)</h5>
+                  <a href="https://www.imdb.com/title/tt0167260/" target="_blank" class="imdb-button">IMDb</a>
+                  <a href="https://www.justwatch.com/au/movie/the-lord-of-the-rings-the-return-of-the-king" target="_blank" class="justwatch-button">Find Streaming</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card custom-card">
+                <img src="images/thematrix.png" class="card-img-top" alt="The Matrix">
+                <div class="card-body">
+                  <h5 class="card-title">The Matrix (1999)</h5>
+                  <br>
+                  <a href="https://www.imdb.com/title/tt0133093/" target="_blank" class="imdb-button">IMDb</a>
+                  <a href="https://www.justwatch.com/au/movie/the-matrix" target="_blank" class="justwatch-button">Find Streaming</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card custom-card">
+                <img src="images/theprestige.png" class="card-img-top" alt="The Prestige">
+                <div class="card-body">
+                  <h5 class="card-title">The Prestige (2006)</h5>
+                  <br>
+                  <a href="https://www.imdb.com/title/tt0482571/" target="_blank" class="imdb-button">IMDb</a>
+                  <a href="https://www.justwatch.com/au/movie/the-prestige" target="_blank" class="justwatch-button">Find Streaming</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card custom-card">
+                <img src="images/trainingday.png" class="card-img-top" alt="Training Day">
+                <div class="card-body">
+                  <h5 class="card-title">Training Day (2001)</h5>
+                  <br>
+                  <a href="https://www.imdb.com/title/tt0139654/" target="_blank" class="imdb-button">IMDb</a>
+                  <a href="https://www.justwatch.com/au/movie/training-day" target="_blank" class="justwatch-button">Find Streaming</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+
+        <footer>
+          <div>
+            <br><br>
+            © 2023 by Glaxxon. Made for CS50x.
+          </div>
+        </footer>
+        
+      <!--Script to select a random movie from a list-->
+      <script>
+        const randomClick = document.getElementById('random-click');
+        const randomMovie = document.getElementById('random-movie');
+
+        var movies = ["A Few Good Men", "Aliens", "An American Werewolf in London", "Blade Runner 2049", "Die Hard", "Edge of Tomorrow", "Harry Potter and the Prisoner of Azkaban",
+                      "Iron Man", "John Wick", "Mission: Impossible - Ghost Protocol", "Remember the Titans", "Savings Private Ryan", "Terminator 2: Judgement Day", "The Batman",
+                      "The Dark Knight", "The Equalizer", "The Last Samurai", "The Lord of the Rings: The Return of the King (but maybe start with The Fellowship of the Ring first)", "The Matrix", "The Prestige", "Training Day"];
+
+        randomClick.addEventListener('click', function () {
+          const randomIndex = Math.floor(Math.random() * movies.length);
+          const randomElement = movies[randomIndex];
+
+          randomMovie.innerHTML = "I think you should watch: " + randomElement;
+        })
+      </script>
+    </body>
+</html>
